@@ -1,0 +1,31 @@
+/* Post.css */
+footer {
+    background-color: #2d3748;
+    padding: 30px;
+    color: white;
+    text-align: center;
+  }
+  
+  .foot1 {
+    margin-bottom: 20px;
+  }
+  
+  .foot2 a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+  
+  .foot2 a:hover {
+    color: #63b3ed;
+  }
+  
+  .bar {
+    font-size: 0.875rem;
+    margin-top: 20px;
+  }
+  
+  .bar p {
+    color: #edf2f7;
+  }
+  

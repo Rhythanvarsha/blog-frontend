@@ -1,0 +1,147 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  background-image: url('./login.png');
+}
+
+/* Main Login Page Container */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f1f1f1;
+  
+
+  
+}
+p .login-title{
+    color: #fff;
+}
+
+/* Login Container Styling */
+.login-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-out;
+  margin-right: 20px;
+  height: 400px;
+  background-image: url('./login.png');
+}
+
+/* Image and Title */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.login-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-left: 3px;
+  padding-right: 6px;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: #e9e0e0;
+  font-weight: bold;
+
+}
+
+/* Login Form Heading */
+.login-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeInError 1s forwards;
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  border-color: #5c0d51;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Submit Button Styling */
+.submit-button {
+  width: 50%;
+  padding: 12px;
+  background-color: #34042b;
+  margin-left: 85px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #9f2394;
+}
+
+/* Create New Account Link */
+.create-account {
+  text-align: center;
+  margin-top: 1rem;
+  color: #104fae;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.create-account:hover {
+  color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInError {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

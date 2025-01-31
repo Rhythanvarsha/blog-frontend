@@ -1,0 +1,190 @@
+/* Main container for My Blogs */
+.myblogs-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.myblogs-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    width: 60%;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease-in-out;
+}
+
+.myblogs-container h2:hover {
+    color: #e63946;
+}
+
+/* Styling for the Add Blog Form */
+.add-blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.4);
+}
+
+.add-blog-button {
+    background-color: #530a3b;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centered the button */
+}
+
+.add-blog-button:hover {
+    background-color: #ca5ae0;
+}
+
+/* Styling for Search Input */
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    align-self: center; /* Centered the search input */
+}
+
+.search-input:focus {
+    border-color: #480b68;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.4);
+}
+
+/* Styling for Blog Cards */
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-card button {
+    background-color: #4f0b5a;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Added margin to separate buttons */
+}
+
+.blog-card button:hover {
+    background-color: #d62828;
+}
+
+/* Styling for Edit Form */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.save-edit-button {
+    background-color: #5a0c57;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: center; /* Centered the button */
+    margin-left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.save-edit-button:hover {
+    background-color: #1c86e7;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: center; /* Centered the button */
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Message for no blogs */
+.no-blogs-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Additional responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .myblogs-container {
+      width: 90%;
+    }
+
+    .add-blog-container {
+      flex-direction: column;
+    }
+
+    .input-field {
+      width: 100%;
+    }
+
+    .blog-card {
+      margin: 10px 0;
+      padding: 15px;
+    }
+
+    .save-edit-button,
+    .delete-button {
+      width: 100%;
+      margin-left: 0;
+    }
+}

@@ -1,0 +1,60 @@
+/* Header.css */
+
+/* Style for the top navigation section */
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+}
+
+.top-button {
+  background-color: #4299e1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.top-button:hover {
+  background-color: #3182ce;
+}
+
+/* Main header styling */
+header {
+  background-color: #4a90e2;
+  padding: 20px;
+  color: white;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
